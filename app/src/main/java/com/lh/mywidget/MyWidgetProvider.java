@@ -49,6 +49,7 @@ public class MyWidgetProvider extends AppWidgetProvider {
                         AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(mContext);
                         appWidgetManager.updateAppWidget(new ComponentName(mContext,
                                 MyWidgetProvider.class), mRemoteViews);
+                        
                         mHandler.sendEmptyMessageDelayed(0, WeatherRefresh);
                     }
 
